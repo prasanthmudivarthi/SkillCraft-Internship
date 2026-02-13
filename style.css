@@ -1,0 +1,101 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --nav-color: #f4f4f4;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: white;
+    --nav-color: #1f1f1f;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-color);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Theme button */
+#themeToggle {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* About */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--nav-color);
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .nav-links {
+        display: none;
+    }
+}
